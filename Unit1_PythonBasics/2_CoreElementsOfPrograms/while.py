@@ -45,7 +45,7 @@ if we define 'end' to be 6, your code should print out the result:
 21
 which is 1 + 2 + 3 + 4 + 5 + 6.
 '''
-# end = 6
+end = 6
 add = 1
 total = 0
 while add != end:

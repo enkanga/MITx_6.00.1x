@@ -13,7 +13,7 @@ For example, if s = 'azcbobobegghakl', then your program should print:
 Number of times bob occurs is: 2
 '''
 
-# s = 'abcdefghijklmnopqrstuvwxyz'
+s = 'azcbobobegghakl'
 num_bob = 0
 for i in range(len(s)):
     if s[i : i + 3] == 'bob':

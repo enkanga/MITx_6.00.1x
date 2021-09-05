@@ -18,7 +18,7 @@ For example, if s = 'abcbcd', then your program should print:
 Longest substring in alphabetical order is: abc
 '''
 
-# s = 'azcbobobegghakl'
+s = 'azcbobobegghakl'
 sub_str = ''
 for i in range(len(s)):
     curr_str = ''

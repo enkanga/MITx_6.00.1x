@@ -41,7 +41,7 @@ if we define 'end' to be 6, your code should print out the result:
 21
 which is 1 + 2 + 3 + 4 + 5 + 6.
 '''
-# end = 6
+end = 6
 total = 0
 for i in range(1, end + 1):
     total += i

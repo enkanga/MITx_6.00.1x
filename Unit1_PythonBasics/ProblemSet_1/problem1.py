@@ -14,7 +14,7 @@ For example, if s = 'azcbobobegghakl', your program should print:
 Number of vowels: 5
 '''
 
-# s = 'abcdefghijklmnopqrstuvwxyz'
+s = 'azcbobobegghakl'
 num_vowels = 0
 for letter in s:
     if letter in ['a', 'e', 'i', 'o', 'u']:
