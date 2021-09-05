@@ -5,6 +5,10 @@ Created on Sun Sep  5 14:53:54 2021
 @author: ENkanga
 """
 
+'''
+Update cube bsiection search programs to handle cases of negative and fractional cubes.
+'''
+
 #%% x < 1
 
 cube = -54
