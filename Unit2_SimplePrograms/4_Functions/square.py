@@ -6,7 +6,8 @@ Created on Tue Sep  7 22:01:08 2021
 """
 
 '''
-Write a Python function, square, that takes in one number and returns the square of that number.
+Write a Python function, square, that takes in one number 
+and returns the square of that number.
 
 This function takes in one number and returns one number.
 '''
