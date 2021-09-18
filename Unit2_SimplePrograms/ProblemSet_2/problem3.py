@@ -37,7 +37,7 @@ def minFixedMonthlyPaymentBisection(balance, annualInterestRate):
     
     lowerBound = balance / 12
     upperBound = (balance * (1 + monthlyInterestRate)**12) / 12.0
-    eps = 0.05
+    eps = 0.01
     
     while abs(balance) > eps:
         monthlyPayment = (lowerBound + upperBound) / 2
