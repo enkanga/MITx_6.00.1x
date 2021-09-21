@@ -45,7 +45,7 @@ wordlist = loadWords()
 
 #%% Problem 1
 
-# Using a list comprehension
+# Using list comprehension
 """
 def isWordGuessed(secretWord, lettersGuessed):
     '''
