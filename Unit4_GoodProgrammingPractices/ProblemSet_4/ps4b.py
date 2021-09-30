@@ -124,10 +124,63 @@ def playGame(wordList):
 
     wordList: list (string)
     """
-    # TO DO... <-- Remove this comment when you code this function
-    print("playGame not yet implemented.") # <-- Remove this when you code this function
-
+    # initialize empty dictionary for hand
+    hand = {}
+    
+    # while user still wants to play (break statement has not been executed in while loop)
+    while True:
+          # Asks the user to input 'n' or 'r' or 'e'.
+          cont = input('Enter n to deal a new hand, r to replay the last hand, or e to end game: ')
+          
+          # If the user inputs 'e'
+          if cont == 'e':
+              # immediately exit the game
+              break
+          
+          # If the user inputs anything that's not 'n' or 'r'
+          if cont not in ['n', 'r']:
+              # keep asking them again
+              print('Invalid command.')
+              continue
+          # if user chooses 'r' but has not played a hand previously
+          if cont == 'r' and hand == {}:
+              # prompt them to choose again
+              print('You have not played a hand yet. Please play a new hand first!')
+              continue
+              
+          
+          
+          # while user has not entered valid command for player
+          player = ''
+          while player not in ['c', 'u']:
+              # Ask the user to input a 'u' or a 'c'
+              player = input('Enter u to have yourself play, c to have the computer play: ')
+              
+              # If the user inputs anything that's not 'c' or 'u'
+              if player not in ['c', 'u']:
+                  print('Invalid command.')
+                  continue
+              
+          # Switch functionality based on the above choices
+          # if user inputs 'n', let the user play a new (random) hand
+          if cont == 'n':
+              # deal a new random hand
+              hand = dealHand(HAND_SIZE)
+          # if the user inputted 'r', play the last hand again
+          
+          # If the user inputted 'u', 
+          if player == 'u':
+              # let the user play the game with the selected hand, using playHand
+              playHand(hand, wordList, HAND_SIZE)
+          # If the user inputted 'c'
+          if player == 'c':
+              # let the computer play the game with the selected hand, using compPlayHand
+              compPlayHand(hand, wordList, HAND_SIZE)
+          print()
+            
         
+        
+      
 #
 # Build data structures used for entire session and play game
 #
