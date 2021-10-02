@@ -172,7 +172,7 @@ def isValidWord(word, hand, wordList):
     wordList: list of lowercase strings
     """
     try:
-        return (word in wordList) and all(word.count(letter) <= hand[letter] for letter in word)
+        return (word in wordList) and all(word.count(letter) <= hand[letter] for letter in set(word))
     except KeyError:
         return False
             
@@ -320,4 +320,4 @@ def playGame(wordList):
 #
 if __name__ == '__main__':
     wordList = loadWords()
-    playGame(wordList)
+    #playGame(wordList)
